@@ -1,0 +1,188 @@
+.utama{
+	background-image: url(img/hen3.png);
+
+}
+.depan{
+	border: solid;
+	margin-right:150px; 
+
+	margin-left:150px;
+	color: black;
+
+}
+
+.logo{
+	text-align: center;
+}
+
+.ling{
+	border-style: inset;
+	background-color: grey;
+}
+.ling ul li{
+	margin-top: 20px;
+	margin-right: 10px;	
+}
+.ling a{
+	display: inline-block;
+	text-decoration: none;
+	border-bottom: 4px dotted blue;
+	margin-right: 220px;
+	color: salmon;
+
+}
+.ling a:hover {
+	background-color: green;
+	color: white;
+	border-top: 5px solid green;
+	border-bottom:  5px solid green;
+	border-right: 5px solid green;
+	border-left:5px solid green;
+
+}
+.gambar{
+	margin: auto;
+	height: 500px;
+	width: 500px;
+	background-image: url(img/hen2.jpg);
+	background-size: cover;
+	border-top: 5px solid green;
+	border-bottom:  5px solid green;
+	border-right: 5px solid green;
+	border-left:5px solid green;
+
+
+}
+.ini{
+	background-color: grey;
+	text-align: center;
+	font: 16px/28px arial,sans-serif;
+	border: solid;
+}
+
+
+.data{
+	background-color: grey;
+	text-align: center;
+	padding: 10px;
+	
+}
+.data a{
+
+	text-decoration: none;
+	color: black;
+}
+
+.penulis{
+	text-align: center;
+	font-size: 18px;
+	margin-top: -5px;
+	
+
+}
+.penulis a{
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+
+}
+
+.footer{
+	background-color: black;
+	padding: 20px;
+}
+.footer .copy{
+	color: white;
+	text-align: center;
+	font-size: 12px;
+}
+
+body{
+	font-family: 'Roboto',sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.sidebar{
+
+	position: fixed;
+	top:28px;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #042331;
+	transition: all .5s ease;
+}
+.sidebar header{
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	background: #063146;
+	user-select: none;
+}
+.sidebar ul a{
+	display: block;
+	height: 100%
+	width:100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: white;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	transition: .4s;
+}
+ul li:hover a{
+	padding-left: 50px;
+}
+.sidebar ul a i{
+	margin-right: 16px;
+
+}
+#check{
+	display: none;
+}
+label #btn,label #cansel{
+
+	position: absolute;
+	cursor: pointer;
+	background: #042331;
+	border-radius: 3px;
+}
+label #btn{
+	position: fixed;
+	left: 40px;
+	top: 25px;
+	font-size: 35px;
+	color: white;
+	padding: 6px 12px;
+	transition: all .5s ;
+}
+label #cansel{
+	position: fixed;
+	z-index: 1111;
+	left: -195px;
+	top: 43px;
+	font-size: 30px;
+	color: #0a5275;
+	padding: 4px 9px;
+	transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+	left: 0;
+}
+#check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+
+}
+#check:checked ~ label #cansel{
+	left: 195px;
+
+}
